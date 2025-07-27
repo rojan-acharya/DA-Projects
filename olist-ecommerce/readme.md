@@ -13,7 +13,7 @@ This project analyzes the Olist e-commerce dataset using MySQL, Python, Pandas, 
 ## 📊 Project Objectives
 
 ### 1. Sales Performance Analysis
-- Total revenue over time
+- Total revenue over yearly
 - Top 10 best-selling products
 - Top sellers by revenue
 - Revenue by product category
@@ -63,7 +63,6 @@ This project analyzes the Olist e-commerce dataset using MySQL, Python, Pandas, 
 ## 📁 Repository Structure
 - data/ # Raw and cleaned data files
 - notebooks/ # Jupyter notebooks for analysis
-- scripts/ # Python scripts (ETL, utilities)
 - visuals/ # Tableau and Matplotlib/Seaborn plots
 - sql/ # SQL queries
 - README.md # Project documentation
