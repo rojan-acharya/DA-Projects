@@ -63,6 +63,7 @@ This project analyzes the Olist e-commerce dataset using MySQL, Python, Pandas, 
 ## 📁 Repository Structure
 - data/ # Raw and cleaned data files
 - notebooks/ # Jupyter notebooks for analysis
+- scripts/ # Python scripts
 - visuals/ # Tableau and Matplotlib/Seaborn plots
 - sql/ # SQL queries
 - README.md # Project documentation

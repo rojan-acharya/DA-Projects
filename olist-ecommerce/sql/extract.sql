@@ -24,3 +24,25 @@ join order_items on orders.order_id = order_items.order_id
 join products on order_items.product_id = products.product_id
 join sellers on order_items.seller_id = sellers.seller_id;
     
+
+-- Customer Segmentation
+-- RFM (Recency, Frequency, Monetary) analysis
+-- Customer clustering by order/spend
+-- Loyal customers by city/state
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
