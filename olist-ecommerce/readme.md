@@ -21,14 +21,12 @@ This project analyzes the Olist e-commerce dataset using MySQL, Python, Pandas, 
 
 ### 2. Customer Segmentation
 - RFM (Recency, Frequency, Monetary) analysis
-- Customer clustering by order/spend
 - Loyal customers by city/state
 
 ### 3. Delivery Performance Analysis
 - Average delivery time (actual vs estimated)
 - Delays by state or seller
 - Freight cost vs delivery time
-- Monthly delivery trends
 
 ### 4. Payment Behavior Analysis
 - Popular payment methods

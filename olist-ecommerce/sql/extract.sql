@@ -26,23 +26,34 @@ join sellers on order_items.seller_id = sellers.seller_id;
     
 
 -- Customer Segmentation
--- RFM (Recency, Frequency, Monetary) analysis
--- Customer clustering by order/spend
--- Loyal customers by city/state
+select
+    c.customer_unique_id,
+    max(o.order_purchase_timestamp) as last_order_time,
+    count(distinct o.order_id) as frequency,
+    round(sum(payments.payment_value),2) as monetary_value,
+    c.customer_city,
+    c.customer_state
+from customers c
+join orders o on c.customer_id = o.customer_id
+join payments on o.order_id = payments.order_id
+group by c.customer_unique_id, c.customer_city, c.customer_state;
 
 
-
-
-
-
-
-
-
-	
-
-
-
-
-
+-- Delivery Performance Analysis
+select
+	o.order_id,
+    o.order_status,
+    o.order_purchase_timestamp,
+    o.order_delivered_customer_date as delivery_date,
+    o.order_estimated_delivery_date as delivery_estimate_date,
+    c.customer_state,
+    freight.total_freight_value
+from orders o
+join customers c on o.customer_id = c.customer_id
+left join(
+	select order_id, SUM(freight_value) AS total_freight_value
+    from order_items
+    group by order_id
+) as freight on o.order_id = freight.order_id;
 
 
