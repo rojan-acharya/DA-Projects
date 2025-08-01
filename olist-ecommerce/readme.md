@@ -41,19 +41,6 @@ This project analyzes the Olist e-commerce dataset using MySQL, Python, Pandas, 
 
 ### 6. Geographic Analysis
 - Order distribution by city/state
-- Freight cost vs distance
-- Heatmaps of sellers/customers
-
-### 7. Top/Bottom Performing Sellers
-- Best-rated sellers
-- Most delayed sellers
-- Revenue per seller
-- Seller regions
-
-### 8. Freight Cost vs Product Value
-- Freight % of product value
-- Freight cost by weight/volume
-- Regional freight pricing patterns
 
 ---
 
