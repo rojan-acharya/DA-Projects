@@ -1,10 +1,10 @@
-select * from customers limit 5;
-select * from geolocation limit 5;
-select * from orders limit 5;
-select * from order_items limit 5;
-select * from products limit 5;
-select * from payments limit 5;
-select * from sellers limit 5;
+select * from customers;
+select * from geolocation;
+select * from orders;
+select * from order_items;
+select * from products;
+select * from payments;
+select * from sellers;
 
 
 
@@ -57,3 +57,31 @@ left join(
 ) as freight on o.order_id = freight.order_id;
 
 
+-- Payment Behavior Analysis
+-- - Popular payment methods
+-- - Installments by payment type
+-- - Payment value by category
+-- - Top payment types by region
+
+select
+    pay.order_id,
+    pay.payment_type,
+    pay.payment_installments,
+    pay.payment_value,
+    c.customer_state,
+    p.product_category
+from payments pay
+join orders o on pay.order_id = o.order_id
+join customers c on o.customer_id = c.customer_id
+join order_items oi on pay.order_id = oi.order_id
+join products p on oi.product_id = p.product_id;
+
+
+    
+    
+    
+    
+    
+    
+    
+    
