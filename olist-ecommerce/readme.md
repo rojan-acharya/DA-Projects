@@ -38,7 +38,6 @@ This project analyzes the Olist e-commerce dataset using MySQL, Python, Pandas, 
 - Freight cost vs product weight
 - Product descriptions vs sales
 - Top categories by revenue
-- Product size vs return rate
 
 ### 6. Geographic Analysis
 - Order distribution by city/state

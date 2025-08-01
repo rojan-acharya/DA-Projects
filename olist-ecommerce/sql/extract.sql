@@ -58,27 +58,45 @@ left join(
 
 
 -- Payment Behavior Analysis
--- - Popular payment methods
--- - Installments by payment type
--- - Payment value by category
--- - Top payment types by region
+select
+	p.product_category,
+	round(sum(py.payment_value),2) as total_payment
+from payments py
+join order_items oi on py.order_id = oi.order_id
+join products p on oi.product_id = p.product_id
+group by p.product_category
+order by total_payment desc;
+
+
+select 
+	py.payment_type,
+    c.customer_state,
+    count(*) as count
+from payments py
+join orders o on o.order_id = py.order_id
+join customers c on c.customer_id = o.customer_id
+group by c.customer_state, py.payment_type
+order by c.customer_state, count desc;
+    
+    
+-- Product Analysis
+-- Freight cost vs product weight
+-- Product descriptions vs sales
+-- Top categories by revenue
 
 select
-    pay.order_id,
-    pay.payment_type,
-    pay.payment_installments,
-    pay.payment_value,
-    c.customer_state,
-    p.product_category
-from payments pay
-join orders o on pay.order_id = o.order_id
-join customers c on o.customer_id = c.customer_id
-join order_items oi on pay.order_id = oi.order_id
-join products p on oi.product_id = p.product_id;
+    oi.product_id,
+    p.product_category,
+    avg(oi.freight_value) as avg_freight,
+    avg(p.product_weight_g) as avg_weight,
+    avg(p.product_description_length) as avg_description_length,
+    sum(oi.price) as total_sales,
+    sum(oi.price + oi.freight_value) as total_revenue,
+    count(*) as total_items_sold
+from order_items oi
+join products p on oi.product_id = p.product_id
+group by oi.product_id, p.product_category;
 
-
-    
-    
     
     
     
