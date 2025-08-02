@@ -1,0 +1,19 @@
+Key Requirements
+
+- KPI Overview
+    display a summary of total sales, profits and quantity of the current year and the pervious year.
+- Sales Trends (sparkline charts)
+    present the data for each KPI on a monthly basis for both the current and pervious year
+    identify months with highest and lowest sales and make them easy to recognize
+- Product Subcategory Comparison (bar in bar chart)
+    compare sales performance by different product subcategories for current and pervious year
+    include a comparison of sales with profit 
+- Weekly trends for the sales and profit (line chart)
+    present weekly sales and profit data of the current year 
+    display the average weekly values
+    highlight weeks that are above and below the average to draw attention to sales and profit performance
+
+Dynamic Dashboard
+- The dashboard should allow users to check historical data by offering them the flexibility to select any desired year.
+- Provide users with the ability to navigate between the dashboard easily
+- Make the charts and graphs interactive, enabling the users to filter data using charts. 
