@@ -29,7 +29,6 @@ This project presents a dynamic and interactive Tableau dashboard that provides 
 ## 🚀 Dynamic & Interactive Dashboard
 
 - 📆 **Year Selector**: Users can interactively choose any historical year for analysis
-- 🧭 **Navigation Controls**: Intuitive navigation between different dashboard views
 - 🖱️ **Interactive Filters**: Users can filter data directly by interacting with charts and graphs (e.g., clicking on a subcategory, year or month)
 
 ---
