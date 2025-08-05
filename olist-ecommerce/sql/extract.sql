@@ -67,7 +67,6 @@ join products p on oi.product_id = p.product_id
 group by p.product_category
 order by total_payment desc;
 
-
 select 
 	py.payment_type,
     c.customer_state,
@@ -80,10 +79,6 @@ order by c.customer_state, count desc;
     
     
 -- Product Analysis
--- Freight cost vs product weight
--- Product descriptions vs sales
--- Top categories by revenue
-
 select
     oi.product_id,
     p.product_category,
@@ -98,8 +93,19 @@ join products p on oi.product_id = p.product_id
 group by oi.product_id, p.product_category;
 
     
-    
-    
-    
-    
-    
+-- Geographic Analysis    
+select 
+    c.customer_state,
+    c.customer_city,
+    count(o.order_id) as total_orders
+from customers c
+join orders o on c.customer_id = o.customer_id
+group by c.customer_state, c.customer_city;
+
+select 
+    customer_id, 
+    geolocation_lat, 
+    geolocation_lng
+from customers
+join geolocation on customers.customer_city = geolocation.geolocation_city
+where geolocation_lat is not null and geolocation_lng is not null;

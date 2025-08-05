@@ -1,47 +1,62 @@
-# E-commerce Olist Dataset Analysis
+# Oilst Ecomm
 
-This project analyzes the Olist e-commerce dataset using MySQL, Python, Pandas, Numpy, Matplotlib, Seaborn and Tableau. The goal is to uncover business insights and trends related to sales, customers, products, payments, deliveries and geography.
-
-## 🔧 Tools & Technologies
-- Python (Pandas, Numpy, Matplotlib, Seaborn)
-- MySQL (for querying and data extraction)
-- Tableau (for interactive dashboards)
-- Jupyter Notebooks
+This project analyzes the **Olist e-commerce dataset** using **MySQL**, **Python** and **Tableau**, aiming to uncover business insights across sales, customers, products, payments, deliveries and geography.
 
 ---
 
-## 📊 Project Objectives
+## 🧰 Tools & Technologies
 
-### 1. Sales Performance Analysis
-- Total revenue over yearly
-- Top 10 best-selling products
-- Top sellers by revenue
-- Revenue by product category
-- Monthly sales trend
+- **Python**: Pandas, NumPy, Matplotlib, Seaborn  
+- **SQL**: MySQL for querying and data extraction  
+- **Tableau**: Interactive dashboards for Sales & Payment analysis  
+- **Jupyter Notebook**: Data exploration and visualization
 
-### 2. Customer Segmentation
+---
+
+## 🎯 Project Objectives
+
+### 📈 Sales Performance
+- Analyze total revenue by year and month
+- Identify top-selling products and top sellers
+- Revenue trends by product category
+
+### 👥 Customer Segmentation
 - RFM (Recency, Frequency, Monetary) analysis
-- Loyal customers by city/state
+- Discover loyal customer locations by state/city
 
-### 3. Delivery Performance Analysis
-- Average delivery time (actual vs estimated)
-- Delays by state or seller
-- Freight cost vs delivery time
+### 🚚 Delivery Performance
+- Compare actual vs estimated delivery times
+- Delivery delays by state and seller
+- Analyze freight cost impact
 
-### 4. Payment Behavior Analysis
-- Popular payment methods
-- Installments by payment type
-- Payment value by category
-- Top payment types by region
+### 💳 Payment Behavior
+- Most common payment methods
+- Installments across payment types
+- Regional analysis of payment types
 
-### 5. Product Analysis
-- Freight cost vs product weight
-- Product descriptions vs sales
-- Top categories by revenue
+### 📦 Product Insights
+- Relationship between freight cost and product weight
+- Sales trends based on product title/length
+- Top product categories by revenue
 
-### 6. Geographic Analysis
-- Order distribution by city/state
+### 🗺️ Geographic Analysis
+- Order distribution by city and state
 
+---
+
+## 📊 Tableau Dashboards
+
+### ✅ 1. **Sales Dashboard**
+- KPI Overview: Revenue, Profit, Quantity (Current vs Previous Year)
+- Monthly Sales Trend
+- Top Categories and Sellers by Performance
+
+### ✅ 2. **Payment Dashboard**
+- Most Used Payment Methods (based on count)
+- Installments by Payment Type and Region
+- Payment Value Distribution by Category
+
+> Dashboards are interactive with filters for drill-down insights.
 ---
 
 ## 📁 Repository Structure
@@ -55,3 +70,8 @@ This project analyzes the Olist e-commerce dataset using MySQL, Python, Pandas, 
 
 ---
 
+## 📈 Dashboards
+
+https://public.tableau.com/app/profile/rojan.acharya/viz/OilstEcomm/PaymentDash
+
+---
