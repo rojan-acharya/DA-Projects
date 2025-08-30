@@ -10,8 +10,9 @@ Exploratory Data Analysis (EDA) and Tableau dashboards on Uber ride data to unco
   - **Ride Insights**: Time-based trends, cancellations, payment modes, locations  
 
 ## 📈 Tech Stack  
-- Python (Pandas, Matplotlib, Seaborn)  
-- Tableau  
+- Python (Pandas, Matplotlib, Seaborn)
+- MySQl
+- Excel, Tableau  
 
 ## 🎯 Outcomes  
 - Insights on cancellation patterns  
